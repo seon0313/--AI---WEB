@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LIMO - 2 TEAM</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css"  rel="stylesheet" href="/file/css/mainmenu.css" media="only screen and (max-width: 800px)">
+    <link type="text/css"  rel="stylesheet" href="/file/css/main.css">
+    <link type="text/css"  rel="stylesheet" href="/file/css/desktop.css" media="not screen and (max-width: 800px)">
+</head>
+<body>
+    <h1>2TEAM - LIMO <img src="/file/img/fish.png" width="50vw"> CONTROL</h1>
+    <div>
+        <div class="live_view">
+            <video id="viewVideoElement" autoplay muted playsinline></video>
+            <video id="originalVideoElement" autoplay muted playsinline></video>
+            <video id="yoloVideoElement" autoplay muted playsinline></video>
+            <div class="control">
+                <a>카메라 전환</a>
+                <div class="control_hover">
+                    <div class="control_item" onclick="videoChangeClick('video');">
+                        <a>Top View</a>
+                    </div>
+                    <div class="control_item" onclick="videoChangeClick('original');">
+                        <a>Original</a>
+                    </div>
+                    <div class="control_item" onclick="videoChangeClick('yolo');">
+                        <a>Yolo</a>
+                    </div>
+                    <div class="control_item" onclick="videoChangeClick('all');">
+                        <a>All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="ch">
+            <input type="text" placeholder="Channel" id="channelInput" value="cqjl0h639m9rvs3djurg">
+            <input type="text" placeholder="Key" id="keyInput" value="wego">
+            <button id="startButton">연결</button>
+        </div>
+        <div class="items">
+            <div class="leftPanel">
+                <h3>LIMO 제어</h3>
+                <button class="item" id="defaultButton">
+                    Default
+                </button>
+                <button class="item" id="scenario1Button">
+                    Scenario1
+                </button>
+                <button class="item" id="scenario2Button">
+                    Scenario2
+                </button>
+            </div>
+            <div class="rightPanel">
+                <h3>환경 제어</h3>
+                <button class="item" id="openButton">
+                    차단기 OPEN
+                </button>
+                <button class="item" id="closeButton">
+                    차단기 CLOSE
+                </button>
+                <div class="item">
+                    <a>3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/file/js/video/VideoDecoder.js"></script>
+    <script src="/file/js/control/KeyboardControl.js"></script>
+    <script src="/file/js/main.js"></script>
+    <script src="/file/js/originalVideo.js"></script>
+    <script src="/file/js/yoloVideo.js"></script>
+    <script src="/file/js/topview.js"></script>
+    <script src="/file/js/control.js"></script>
+    <script src="/file/js/emergency.js"></script>
+    <script src="/file/js/flask.js"></script>
+</body>
+</html>

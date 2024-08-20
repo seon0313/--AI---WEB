@@ -1,0 +1,62 @@
+html body {
+    font-family: 't';
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a{font-family: 't';}
+
+input {
+    font-family: 't';
+}
+
+button {
+    font-family: 't';
+}
+
+.control_hover {
+    display: none;
+    color: rgb(255,255,255);
+}
+
+.control {
+    color: rgb(255,255,255);
+    text-indent: 10px;
+}
+
+.control:hover > .control_hover {
+    display: block;
+}
+
+.live_view {
+    padding-bottom: 10px;
+    overflow-y: auto;
+}
+
+video{
+    display: inline-block;
+}
+
+.control_item {
+    background-color: #CDB3D9;
+    height: 30px;
+    font-size: 25px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: 't';
+    src: url('/file/font/font.ttf') format('truetype');
+}
+
+#originalVideoElement {
+    display: none;
+}
+#yoloVideoElement {
+    display: none;
+}
